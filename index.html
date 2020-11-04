@@ -43,6 +43,7 @@
             if (t.length > 10) {
                 var t0 = t.pop();
                 var fps = Math.floor(1000 * 10 / (now - t0));
+                var fps = (10000 / (now - t0)).toFixed(6);
                 
             }
             window.requestAnimationFrame(animate);
